@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using SportsStore.Domain.Abstract;
+using SportsStore.Domain.Entities;
 
 namespace SportsStore.WebUI.Controllers
 {
+
     public class ProductController : Controller
     {
-        // GET: Product
-        public ActionResult Index()
+        private IProductRepository repository;
+
+        public ProductController(IProductRepository productRepository)
         {
-            return View();
+            this.repository = productRepository;
         }
     }
 }
