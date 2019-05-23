@@ -17,5 +17,9 @@ namespace SportsStore.WebUI.Controllers
         {
             this.repository = productRepository;
         }
+        public ViewResult List()
+        {
+            return View(repository.Products);
+        }
     }
 }
