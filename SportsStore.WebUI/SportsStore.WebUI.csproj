@@ -165,6 +165,7 @@
     <Content Include="Views\Cart\Completed.cshtml" />
     <Content Include="Views\Navigation\MenuHorizontal.cshtml" />
     <Content Include="Views\Navigation\FlexMenu.cshtml" />
+    <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
